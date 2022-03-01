@@ -14,31 +14,31 @@ on:
       LIBRARY_BRANCH:
         description: 'LIBRARY_BRANCH'
         required: true
-        default: 'v3_10.0'
+        default: 'v3_11.0'
       DEVICE_URL:
         description: 'DEVICE_URL'
         required: true
-        default: 'https://github.com/SGCMarkus/android_device_lge_flashlmdd-twrp'
+        default: 'https://github.com/geekmaster21/android_device_samsung_a71-1'
       DEVICE_COMMON_URL:
         description: 'DEVICE_COMMON_URL'
         required: true
-        default: 'https://github.com/SGCMarkus/android_device_lge_sm8150-common-twrp'
+        default: 'https://github.com/geekmaster21/android_device_samsung_a71-1'
       DEVICE_BRANCH:
         description: 'DEVICE_BRANCH'
         required: true
-        default: 'android-10'
+        default: 'android-11'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/lge/flashlmdd'
+        default: 'device/samsung/a71'
       DEVICE_COMMON_PATH:
         description: 'DEVICE_COMMON_PATH'
         required: true
-        default: 'device/lge/sm8150-common'
+        default: 'device/samsung/a71'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'flashlmdd'
+        default: 'a71'
 
 jobs:
   build:
@@ -78,8 +78,8 @@ jobs:
         mkdir workspace
         cd workspace
         echo "::set-output name=pwd::$(pwd)"
-        git config --global user.name "Hikaru's Action-Build-Bot"
-        git config --global user.email "Android@teio.tk"
+        git config --global user.name "geekmaster21"
+        git config --global user.email "maya-10@hotmail.ca"
         repo init --depth=1 -u ${{ github.event.inputs.LIBRARY_URL }} -b ${{ github.event.inputs.LIBRARY_BRANCH }}
       id: pwd
           
