@@ -19,19 +19,19 @@ on:
       DEVICE_URL:
         description: 'DEVICE_URL'
         required: true
-        default: 'https://github.com/MlgmXyysd/android_device_duoqin_k61v1.git'
+        default: 'https://github.com/geekmaster21/android_device_samsung_a71-1.git'
       DEVICE_BRANCH:
         description: 'DEVICE_BRANCH'
         required: true
-        default: 'master'
+        default: 'android-11'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
-        default: 'device/duoqin/k61v1'
+        default: 'device/samsung/a71'
       DEVICE_NAME:
         description: 'DEVICE_NAME'
         required: true
-        default: 'k61v1'
+        default: 'a71'
 
 jobs:
   build:
